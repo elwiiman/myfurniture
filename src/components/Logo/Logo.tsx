@@ -1,7 +1,11 @@
-import * as React from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
 const Logo = () => {
-    const color = '#941';
+    const themeContext = useContext(ThemeContext);
+
+    const color = themeContext.primary.main;
+
     return (
         <svg
             id="Capa_1"
