@@ -4,7 +4,7 @@ import { ThemeContext } from 'styled-components';
 const Logo = () => {
     const themeContext = useContext(ThemeContext);
 
-    const color = themeContext.primary.main;
+    const color = themeContext.text.primary;
 
     return (
         <svg
