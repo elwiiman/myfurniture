@@ -12,6 +12,10 @@ declare module 'styled-components' {
             main: string;
             contrastText: string;
         };
+        tertiary: {
+            main: string;
+            contrast: string;
+        };
         error: {
             main: string;
             contrastText: string;
@@ -22,7 +26,15 @@ declare module 'styled-components' {
             disabled: string;
             hint: string;
         };
+        line: {
+            primary: string;
+            secondary: string;
+            disabled: string;
+            error: string;
+            focus: string;
+        };
         background: {
+            paper: string;
             main: string;
             contrast: string;
         };
