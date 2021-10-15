@@ -3,7 +3,6 @@ import { device } from '../../config/breakpoints';
 
 export const StyledNav = styled.nav`
     background-color: ${(props) => props.theme.background.main};
-    width: 100%;
     padding: 1em;
     display: block;
 

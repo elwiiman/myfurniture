@@ -24,7 +24,6 @@ export default styled.input<Iinput>`
                 props.error ? props.theme.line.error : props.theme.line.focus};
     }
     height: 43px;
-    padding: 0 0.75em;
     outline: none;
     width: 100%;
     ${fontTypes.paragraph}

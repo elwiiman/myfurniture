@@ -5,7 +5,7 @@ import { featuredBanners } from './__mocks__/featuredBannersData';
 import Slider from './Slider';
 
 export default {
-    title: 'Slider',
+    title: 'Components/FeaturesBannersSlider',
     component: Slider,
 } as ComponentMeta<typeof Slider>;
 

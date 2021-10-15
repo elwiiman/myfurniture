@@ -4,7 +4,7 @@ import Input, { Iinput } from './Input';
 import useInput from '../../../hooks/useInput';
 
 const meta: Meta = {
-    title: 'Common/Form/StyledInput',
+    title: 'Components/Common/Form/StyledInput',
     component: Input,
 };
 
