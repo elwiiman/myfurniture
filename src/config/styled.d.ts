@@ -36,6 +36,7 @@ declare module 'styled-components' {
         background: {
             paper: string;
             main: string;
+            secondary: string;
             contrast: string;
         };
     }

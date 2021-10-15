@@ -1,10 +1,10 @@
 export const lightTheme = {
     primary: {
-        main: '#000',
-        contrastText: '#FFF',
+        main: '#E4E5EE',
+        contrastText: '#324462',
     },
     secondary: {
-        main: '#000',
+        main: '#307AD3',
         contrastText: '#FFF',
     },
 
@@ -18,7 +18,7 @@ export const lightTheme = {
     },
     text: {
         primary: '#324462',
-        secondary: '#000',
+        secondary: '#FFF',
         disabled: '#000',
         hint: '#000',
     },
@@ -32,6 +32,7 @@ export const lightTheme = {
     background: {
         paper: '#FFF',
         main: '#E4E5EE',
+        secondary: '#307AD3',
         contrast: '#fafafa',
     },
 };
@@ -69,6 +70,7 @@ export const darkTheme = {
     background: {
         paper: '#FFF',
         main: '#fff',
+        secondary: '#307AD3',
         contrast: '#fafafa',
     },
 };
