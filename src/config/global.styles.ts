@@ -29,5 +29,4 @@ a:visited,
 a:focus {
     text-decoration: none;
 }
-
 `;

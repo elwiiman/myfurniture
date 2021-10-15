@@ -37,6 +37,7 @@ declare module 'styled-components' {
             paper: string;
             main: string;
             secondary: string;
+            secondary_opac: string;
             contrast: string;
         };
     }
