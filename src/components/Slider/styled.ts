@@ -8,7 +8,7 @@ export const SliderContainer = styled.div`
 export const StyledImage = styled.img`
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 70vh;
     object-fit: cover;
 `;
 
