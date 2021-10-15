@@ -4,8 +4,6 @@ import Footer from '../../components/Footer';
 
 import { featuredBanners } from '../../components/Slider/__mocks__/featuredBannersData';
 
-interface HomeProps {}
-
 const Home = () => {
     return (
         <>
