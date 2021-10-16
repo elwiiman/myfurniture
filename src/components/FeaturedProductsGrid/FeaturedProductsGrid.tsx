@@ -10,8 +10,8 @@ const FeaturedProducts = ({ products }: FeaturedProductsProps) => {
     return (
         <OverallGridContainer>
             <GridContainer>
-                {products.map((product) => (
-                    <GridItem>
+                {products.map((product, index) => (
+                    <GridItem key={index}>
                         <FeaturedProduct product={product} />
                     </GridItem>
                 ))}
