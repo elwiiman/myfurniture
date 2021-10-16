@@ -24,8 +24,8 @@ export const StyledForm = styled.form`
 
     & button {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 1px;
+        right: 1px;
     }
 
     @media ${device.laptop} {

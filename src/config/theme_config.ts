@@ -41,7 +41,7 @@ export const lightTheme = {
 
 export const darkTheme = {
     primary: {
-        main: '#000',
+        main: '#fff',
         contrastText: '#FFF',
     },
     secondary: {
@@ -57,8 +57,8 @@ export const darkTheme = {
         contrastText: '#FFF',
     },
     text: {
-        primary: '#000',
-        secondary: '#000',
+        primary: '#fff',
+        secondary: '#fff',
         disabled: '#000',
         hint: '#000',
     },
@@ -70,11 +70,11 @@ export const darkTheme = {
         error: 'red',
     },
     background: {
-        paper: '#FFF',
-        main: '#fff',
-        secondary: '#307AD3',
-        secondary_opac: 'rgba(48, 122, 211, 0.5)',
-        tertiary: '#7aaffa',
+        paper: '#414146',
+        main: '#000000',
+        secondary: '#323239',
+        secondary_opac: 'rgba(53, 59, 78, 0.5)',
+        tertiary: '#6b6b6f',
         contrast: '#fafafa',
     },
 };

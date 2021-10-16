@@ -5,6 +5,7 @@ const Logo = () => {
     const themeContext = useContext(ThemeContext);
 
     const color = themeContext.text.primary;
+    const background = themeContext.background.main;
 
     return (
         <svg
@@ -14,7 +15,7 @@ const Logo = () => {
             viewBox="0 0 731.71 127.67"
         >
             <defs>
-                <style>{'.cls-1{fill:#fff;}'}</style>
+                <style>{`.cls-1{fill:${background};}`}</style>
                 <style>{`.cls-2{fill:${color};}`}</style>
             </defs>
             <title>{'MF sin fondo'}</title>
