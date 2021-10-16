@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { device } from '../../config/breakpoints';
 
 export const StyledNav = styled.nav`
+    z-index: 99;
+    position: sticky;
+    top: 0;
     background-color: ${(props) => props.theme.background.main};
     padding: 1em;
     display: block;
