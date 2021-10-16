@@ -34,6 +34,7 @@ export const lightTheme = {
         main: '#E4E5EE',
         secondary: '#307AD3',
         secondary_opac: 'rgba(48, 122, 211, 0.5)',
+        tertiary: '#7aaffa',
         contrast: '#fafafa',
     },
 };
@@ -73,6 +74,7 @@ export const darkTheme = {
         main: '#fff',
         secondary: '#307AD3',
         secondary_opac: 'rgba(48, 122, 211, 0.5)',
+        tertiary: '#7aaffa',
         contrast: '#fafafa',
     },
 };

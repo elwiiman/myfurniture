@@ -5,7 +5,7 @@ import { device } from '../../config/breakpoints';
 export const OveralContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #7aaffa;
+    background-color: ${(props) => props.theme.background.tertiary};
     width: 135px;
     border-radius: 5px;
 

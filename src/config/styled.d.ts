@@ -38,6 +38,7 @@ declare module 'styled-components' {
             main: string;
             secondary: string;
             secondary_opac: string;
+            tertiary: string;
             contrast: string;
         };
     }
