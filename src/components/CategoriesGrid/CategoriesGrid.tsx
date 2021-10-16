@@ -37,10 +37,6 @@ const GridTile = ({ category }: GridTileProps) => {
 
 const CategoriesGrid = ({ categories }: CategoriesGridProps) => {
     const selectAnItem = (index: number, category: ResultsEntity) => {
-        const {
-            data: { name },
-        } = category;
-
         switch (index) {
             case 0:
                 return (
