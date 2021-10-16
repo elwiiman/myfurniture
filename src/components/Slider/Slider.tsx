@@ -44,18 +44,16 @@ const Slider = ({ slides }: SliderProps) => {
                 }}
             >
                 {slides.map((slide) => (
-                    <>
-                        <SwiperSlide>
-                            <StyledImage
-                                src={slide.data.main_image.url}
-                                alt={slide.data.main_image.alt}
-                            />
+                    <SwiperSlide key={slide.id}>
+                        <StyledImage
+                            src={slide.data.main_image.url}
+                            alt={slide.data.main_image.alt}
+                        />
 
-                            <Description>
-                                {slide.data.description[0].text}
-                            </Description>
-                        </SwiperSlide>
-                    </>
+                        <Description>
+                            {slide.data.description[0].text}
+                        </Description>
+                    </SwiperSlide>
                 ))}
             </Swiper>
         </SliderContainer>
