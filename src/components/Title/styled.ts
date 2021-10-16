@@ -4,9 +4,12 @@ import { device } from '../../config/breakpoints';
 
 interface IStyledTitle {
     textColorType?: 'primary' | 'secondary';
+    center?: boolean;
 }
 
 export const StyledTitle = styled.h1<IStyledTitle>`
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     color: ${(props) => {
         const textColorType = props.textColorType
             ? props.textColorType
@@ -18,4 +21,5 @@ export const StyledTitle = styled.h1<IStyledTitle>`
     @media ${device.tablet} {
         ${fontTypes.titleDesktop}
     }
+    text-align: ${(props) => (props.center ? 'center' : '')};
 `;

@@ -33,6 +33,10 @@ export const ItemInfo = styled.p`
     color: ${(props) => props.theme.text.secondary};
     margin-top: 0.075em;
     ${fontTypes.microBold}
+
+    @media ${device.tablet} {
+        ${fontTypes.captionBold}
+    }
 `;
 
 export const ItemInfoName = styled(ItemInfo)`
