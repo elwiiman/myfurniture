@@ -69,9 +69,13 @@ export const TextImage = styled.h3`
     color: ${(props) => props.theme.text.primary};
     background-color: ${(props) => props.theme.background.paper};
     position: absolute;
-    ${fontTypes.captionBold}
+    ${fontTypes.microBold}
 
     @media ${device.tablet} {
+        ${fontTypes.subtitle2Mobile}
+    }
+
+    @media ${device.laptop} {
         ${fontTypes.subtitleDesktop}
     }
 `;
