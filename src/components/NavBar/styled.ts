@@ -8,7 +8,6 @@ export const StyledNav = styled.nav`
     background-color: ${(props) => props.theme.background.main};
     padding: 1em;
     display: block;
-    height: 62px;
 
     @media ${device.laptop} {
         display: flex;
@@ -49,6 +48,7 @@ export const LogoContainer = styled.div`
     display: flex;
     background: ${(props) => props.theme.background.main};
     width: 150px;
+    height: 50px;
 `;
 
 export const CartContainer = styled.div`
@@ -66,7 +66,6 @@ export const CartContainer = styled.div`
 
 export const CartContainerMobile = styled.div`
     display: flex;
-    padding: 1em;
     & button {
         margin-right: 0.5em;
     }
