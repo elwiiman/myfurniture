@@ -38,6 +38,7 @@ export const StyledForm = styled.form`
 export const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    position: relative;
     @media ${device.laptop} {
         display: block;
     }
@@ -52,14 +53,23 @@ export const LogoContainer = styled.div`
 export const CartContainer = styled.div`
     display: none;
     padding: 1em;
+
+    & button {
+        margin-right: 0.5em;
+    }
+
     @media ${device.laptop} {
-        display: block;
+        display: flex;
     }
 `;
 
 export const CartContainerMobile = styled.div`
-    display: block;
+    display: flex;
     padding: 1em;
+    & button {
+        margin-right: 0.5em;
+    }
+
     @media ${device.laptop} {
         display: none;
     }

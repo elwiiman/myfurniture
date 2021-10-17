@@ -13,12 +13,6 @@ import { featuredProducts } from '../../mocks/featuredProducts';
 const Home = () => {
     return (
         <>
-            <NavBar
-                doSearch={
-                    // TODO: put aciton here
-                    () => {}
-                }
-            />
             {/* TODO: subsititue by results from the API */}
             <Slider slides={featuredBanners.results} />
 
@@ -31,8 +25,6 @@ const Home = () => {
                 <Title text="Exclusive products for you" center={true} />
                 <FeaturedProductsGrid products={featuredProducts.results} />
             </Container>
-
-            <Footer />
         </>
     );
 };

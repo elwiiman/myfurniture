@@ -3,8 +3,11 @@ import Logo from '../Logo';
 import Input from '../Common/Input';
 import CartIcon from '../Icons/Cart';
 import SearchIcon from '../Icons/Search';
+import Sun from '../Icons/Sun';
+import Moon from '../Icons/Moon';
 import SimpleButton from '../SimpleButton';
 import useInput from '../../hooks/useInput';
+
 import {
     StyledNav,
     StyledForm,
@@ -16,9 +19,15 @@ import {
 
 interface NavBarProps {
     doSearch: Function;
+    toggleTheme: () => void;
+    theme: string;
 }
 
-const NavBar: FunctionComponent<NavBarProps> = ({ doSearch }) => {
+const NavBar: FunctionComponent<NavBarProps> = ({
+    doSearch,
+    toggleTheme,
+    theme,
+}) => {
     const search = useInput('');
 
     const submitSearch = (e: React.SyntheticEvent) => {
@@ -34,6 +43,22 @@ const NavBar: FunctionComponent<NavBarProps> = ({ doSearch }) => {
                     <Logo />
                 </LogoContainer>
                 <CartContainerMobile>
+                    {theme === 'dark' ? (
+                        <SimpleButton
+                            label={<Sun />}
+                            onClick={() => {
+                                toggleTheme();
+                            }}
+                        />
+                    ) : (
+                        <SimpleButton
+                            label={<Moon />}
+                            onClick={() => {
+                                toggleTheme();
+                            }}
+                        />
+                    )}
+
                     <SimpleButton label={<CartIcon />} onClick={() => {}} />
                 </CartContainerMobile>
             </MainContainer>
@@ -48,6 +73,21 @@ const NavBar: FunctionComponent<NavBarProps> = ({ doSearch }) => {
             </StyledForm>
 
             <CartContainer>
+                {theme === 'dark' ? (
+                    <SimpleButton
+                        label={<Sun />}
+                        onClick={() => {
+                            toggleTheme();
+                        }}
+                    />
+                ) : (
+                    <SimpleButton
+                        label={<Moon />}
+                        onClick={() => {
+                            toggleTheme();
+                        }}
+                    />
+                )}
                 <SimpleButton label={<CartIcon />} onClick={() => {}} />
             </CartContainer>
         </StyledNav>
