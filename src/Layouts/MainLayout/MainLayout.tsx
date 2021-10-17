@@ -4,18 +4,12 @@ import { ReactNode } from 'react';
 
 export interface MainLayoutProps {
     children: ReactNode;
-    toggleTheme: () => void;
-    theme: string;
 }
 
-const MainLayout = ({ children, toggleTheme, theme }: MainLayoutProps) => {
+const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <>
-            <NavBar
-                doSearch={() => {}}
-                toggleTheme={toggleTheme}
-                theme={theme}
-            />
+            <NavBar doSearch={() => {}} />
             {children}
             <Footer />
         </>

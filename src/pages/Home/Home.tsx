@@ -1,11 +1,8 @@
-import NavBar from '../../components/NavBar';
 import Slider from '../../components/Slider';
 import CategoriesGrid from '../../components/CategoriesGrid';
 import FeaturedProductsGrid from '../../components/FeaturedProductsGrid';
 import Title from '../../components/Title';
-import Footer from '../../components/Footer';
 import Container from '../../components/Common/Container';
-
 import { featuredBanners } from '../../components/Slider/__mocks__/featuredBannersData';
 import { productCategories } from '../../mocks/productCategories';
 import { featuredProducts } from '../../mocks/featuredProducts';

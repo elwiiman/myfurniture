@@ -1,22 +1,16 @@
-import { useState } from 'react';
 import { GlobalStyles } from './config/global.styles';
 import Home from './pages/Home';
-import Theme from './config/Theme';
+import ThemeProvider from './context/ThemeProvider';
 import MainLayout from './Layouts/MainLayout/MainLayout';
-import { lightTheme, darkTheme } from './config/theme_config';
 
 function App() {
-    const [theme, setTheme] = useState('light');
-    const isDarkTheme = theme === 'dark';
-    const toggleTheme = () => setTheme(isDarkTheme ? 'light' : 'dark');
-
     return (
-        <Theme theme={isDarkTheme ? darkTheme : lightTheme}>
+        <ThemeProvider>
             <GlobalStyles />
-            <MainLayout toggleTheme={toggleTheme} theme={theme}>
+            <MainLayout>
                 <Home />
             </MainLayout>
-        </Theme>
+        </ThemeProvider>
     );
 }
 

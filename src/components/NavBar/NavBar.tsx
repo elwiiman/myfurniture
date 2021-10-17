@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useContext } from 'react';
 import Logo from '../Logo';
 import Input from '../Common/Input';
 import CartIcon from '../Icons/Cart';
@@ -17,18 +17,15 @@ import {
     CartContainerMobile,
 } from './styled';
 
+import { ThemeContext } from '../../context/ThemeProvider';
+
 interface NavBarProps {
     doSearch: Function;
-    toggleTheme: () => void;
-    theme: string;
 }
 
-const NavBar: FunctionComponent<NavBarProps> = ({
-    doSearch,
-    toggleTheme,
-    theme,
-}) => {
+const NavBar: FunctionComponent<NavBarProps> = ({ doSearch }) => {
     const search = useInput('');
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
     const submitSearch = (e: React.SyntheticEvent) => {
         e.preventDefault();
@@ -43,7 +40,7 @@ const NavBar: FunctionComponent<NavBarProps> = ({
                     <Logo />
                 </LogoContainer>
                 <CartContainerMobile>
-                    {theme === 'dark' ? (
+                    {isDarkTheme ? (
                         <SimpleButton
                             label={<Sun />}
                             onClick={() => {
@@ -73,7 +70,7 @@ const NavBar: FunctionComponent<NavBarProps> = ({
             </StyledForm>
 
             <CartContainer>
-                {theme === 'dark' ? (
+                {isDarkTheme ? (
                     <SimpleButton
                         label={<Sun />}
                         onClick={() => {
