@@ -12,7 +12,7 @@ export const GridContainer = styled.section`
     grid-template-columns: auto auto;
     grid-gap: 10px;
 
-    @media ${device.mobileM} {
+    @media ${device.mobileL} {
         grid-template-columns: auto auto auto;
     }
 `;
