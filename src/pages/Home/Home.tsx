@@ -3,7 +3,7 @@ import CategoriesGrid from '../../components/CategoriesGrid';
 import FeaturedProductsGrid from '../../components/FeaturedProductsGrid';
 import Title from '../../components/Title';
 import Container from '../../components/Common/Container';
-import { featuredBanners } from '../../components/Slider/__mocks__/featuredBannersData';
+import { featuredBanners } from '../../mocks/featuredBanners';
 import { productCategories } from '../../mocks/productCategories';
 import { featuredProducts } from '../../mocks/featuredProducts';
 

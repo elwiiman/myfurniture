@@ -1,4 +1,4 @@
-import { FeaturedBanners } from '../../../types/featuredBanners';
+import { FeaturedBanners } from '../types/featuredBanners';
 
 export const featuredBanners: FeaturedBanners = {
     page: 1,

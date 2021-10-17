@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { featuredBanners } from './__mocks__/featuredBannersData';
+import { featuredBanners } from '../../mocks/featuredBanners';
 
 import Slider from './Slider';
 
