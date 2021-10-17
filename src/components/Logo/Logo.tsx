@@ -14,6 +14,7 @@ const Logo = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 731.71 127.67"
             data-testid="logo"
+            style={{ width: '100%' }}
         >
             <defs>
                 <style>{`.cls-1{fill:${background};}`}</style>
