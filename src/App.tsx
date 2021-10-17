@@ -11,14 +11,12 @@ function App() {
     const toggleTheme = () => setTheme(isDarkTheme ? 'light' : 'dark');
 
     return (
-        <>
-            <Theme theme={isDarkTheme ? darkTheme : lightTheme}>
-                <GlobalStyles />
-                <MainLayout toggleTheme={toggleTheme} theme={theme}>
-                    <Home />
-                </MainLayout>
-            </Theme>
-        </>
+        <Theme theme={isDarkTheme ? darkTheme : lightTheme}>
+            <GlobalStyles />
+            <MainLayout toggleTheme={toggleTheme} theme={theme}>
+                <Home />
+            </MainLayout>
+        </Theme>
     );
 }
 
